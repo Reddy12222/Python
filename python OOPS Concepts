@@ -1,0 +1,234 @@
+class Person:
+    def __init__(self,name,gender,profession):
+        self.name = name
+        self.gender = gender
+        self.profession = profession
+    def __str__(self):
+        return f'{self.name}, {self.gender},  {self.profession}'
+    # def working(self):
+    #     print("she working at:",self.name)
+    # def study(self):
+    #     print(" studying at:",self.name)
+
+b1 = Person("niki","F","software Engineer")
+#b2 = Person("niki","F","studying as university")
+# b1.working()
+# print(b1.name)
+print(b1)
+
+object1 : b1
+State:
+    Name
+    gender
+    Profession
+
+Behaviour:
+    working
+    study
+
+Class Methods in python ::==>
+    1. class Method
+    2. objects Properties
+
+1. class Methods:
+    >Static Methods
+        1. Bound to the class
+        2. It can't modify a class or object state
+        3. Can't access or modify the class and Instance variables.
+    >Instance Methods
+        1. Bound to the object of a class
+        2. It can modify a object State.
+        3. Can access and modify  both class and Instance variables
+    >Class methods 
+        1. bound to the class
+        2. It can modify  a class state
+        3. can access only class variables
+        4. Used  to create factory methods
+
+2. objects Properties
+    >Instance Variables
+        1. Bound to object
+        2. Declared inside the  __init()__ method..
+        3. Not shared by objects. Every Object has its own copy.
+
+    >Class Variables
+        1. Bound to object
+        2. Declared inside the class,but outside of any instance method or __init()__d
+        3. shared by all objects of a class.
+
+Examples:
+
+***Class Variable**
+class Student:
+    #class variable(member of a class, nd shared by all instances of a class)
+    school_name = 'ABC School'
+
+**Instance Variable**
+#constructor
+def __init__(self,name,age):
+    #instance Variables(used for data that is uniquw to a particular instance)
+        self.name = name
+        self.age = age
+
+
+
+>Instance Methods
+>Class methods
+>Static Methods
+
+**Instance Methods**
+1.
+#instance method
+def show(self): #self is current obj 
+    #access instance variables and Class Variable
+    print("student:", self.name, self.gender)
+
+2.
+#instance method
+def change_age(self, new_age): #self is current obj 
+    #modify  instance variable
+    self.age = new_age
+
+
+**Class methods**
+#Class method
+@classmethod  (created using @classmethod decorator)
+def modify_school_name(cls, new_name):
+    cls.school_name = new_name
+
+
+Static method: 
+In Python, a static method is a method that belongs to a class but doesn't operate on instances of the class 
+(i.e., it doesn't take self as its first parameter). Instead, it behaves like a regular function, but it is defined within a class for organizational purposes.
+
+Here's how you define a static method in Python:
+
+class MyClass:
+    @staticmethod
+    def my_static_method():
+        print("This is a static method")
+
+# You can call a static method directly on the class
+MyClass.my_static_method()
+
+Keep in mind that static methods are defined using the @staticmethod decorator. 
+When you call a static method, you call it on the class itself, not on an instance of the class.
+
+https://pynative.com/python-static-method/ 
+class Employee:
+    @staticmethod
+    def sample(x):
+        print('Inside static method', x)
+
+# call static method
+Employee.sample(10)
+
+# can be called using object
+emp = Employee()
+emp.sample(10)
+
+##Constructors
+special method used to create and initialize an object of a class
+we can create construcor using __init__() method.
+
+def __init__(self):
+
+##Must read points
+1. For every object, the constructor will be executed only once. for example, if we create four objects, the constructor will be executed 4 times.
+2. Every class has a constructor, but it's not required to define it explicitly. defining constructors in class is optional.
+3. python will provide a default constructor if no constructor is defined
+
+####Functions
+A function is a block of code which only runs when it is called
+In python a function is defined using the def keyword
+
+def my_function():
+    print("hello world")
+
+##Arguments
+Arguments are specified after the function name,inside parentheses
+you can add as many arguments as you want, just separate them with a comma
+
+def my_function(fname):
+    print(fname + "refnes")
+
+my_function("niki")
+my_function("malla")
+my_function("aryan")
+
+##Arbitary arguments
+if you do not know how many arguments that will be passed into your function, add a * before the parameter name in the function definition
+
+def my_function(*kids):
+ print("the kid are"+ kids[2])
+
+my_function("soul","niki","nml") 
+
+##keyword arguments (kwarg)
+you can also send arguments with the key = value syntax.
+
+def my_function(child3, child2, child1):
+ print("the kid are"+ child3)
+
+my_function(child1 = "soul", child2 = "niki", child3 = "nml") 
+
+##The pass statement
+def myfunction():
+    pass
+
+##The return statement
+
+def addition(arg1, arg2):
+    return arg1 + arg2
+
+ans = addition(2,3)
+print(ans)  ##5
+
+##Type of functions
+two types
+1. predefined
+2. user defined
+
+##user defined 
+#are 4 types
+
+1. without argument and without return type 
+    These kind of functions are used whenever we need to perform some action without the user input and not returning back anything to user.
+2. without argument and with return type
+3. with argument and without return type
+4. with argument and with return type
+
+1. without argument and without return type
+
+def abc():
+    print("abc")
+
+2. without argument and with return type
+
+def abc():
+    return 10
+
+nn = abc()
+print(nn)
+
+##
+def add(a, b):
+    result = a + b
+    return result
+
+print(add(2, 2))
+
+3. with argument and without return type
+
+def abc(i):
+    print(i)
+
+4. with argument and with return type
+def abc(i):
+    return i
+
+def abc(i):
+    return i
+    
+nn = abc(5)
+print(nn)
