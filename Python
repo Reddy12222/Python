@@ -1,1 +1,39 @@
-mn
+class and Object
+
+>class:userdefined, keyword -class
+>object : state behobiour ,identity
+
+>Static Methods
+>Instance Methods
+>Class methods
+
+>Static Variables
+>Instance Variables
+>Class Variables
+>local variables
+
+>return/print stmt(purpose)
+>How many ways to create/call obj
+>How many ways to implement method/functions
+
+>Constructors
+>destructors
+>Access modifiers
+>method overloading
+>method overriding
+>Dynamic Typing/Dynamic binding
+>Inner classes
+>Anonymous class and object
+>singelton class
+>wrapper classes
+>Enums
+>Refelections
+
+
+>Inheritance
+>Encapsulation
+>Abstraction
+>Interfaces
+>PACKAGES
+>Bultin functions
+
