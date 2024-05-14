@@ -1,0 +1,1106 @@
+
+arr = [10,20,30,40,50]
+print(min(arr))
+print(max(arr))
+
+Identify the Largest and Smallest Numbers in an Array
+arr = [89,1,33,44,23,6,7]
+arr.sort()
+#print(arr)
+print(arr[-1])
+print(arr[0])
+
+number = int (input ("Enter a number: "))
+
+square = number**2
+
+print ("Square  of  {0} is {1} ".format (number, square))
+
+
+import math
+number = int (input ("Enter a number: "))
+square = int(math.pow (number, 2))
+print ("Square  of  {0} is {1} ".format (number, square))
+
+Check if a String Only Contains Digits
+You can do this with the str.isdigit() function. Using this function, a loop can be constructed that will return true or false values based on whether or not the string in question contains digits.
+
+
+Convert Date From yyyy-mm-dd Format to dd-mm-yyyy Format.
+from datetime import datetime
+
+now = datetime.now()
+date_time_str = now.strftime("%Y-%m-%d %H:%M:%S")
+print(date_time_str)
+
+The process of converting the dates in Python from yyyy-mm-dd format to dd-mm-yyyy format involves taking the input for the date, then specifying the formatting of the date as being “%d/%m/%Y” within the formula .strftime(). The formatting is what matters in this program. Any date can be changed over to the dd-mm-yyyy format as long as it is specified within the formula
+
+def is_palindrome(s):
+    return s == s[::-1]
+
+#print(is_palindrome("DAD"))
+S = "PYTHON"
+ANS = is_palindrome(s)
+
+if ANS:
+    print("YES")
+else:
+    print("NO")
+
+def reverse_string(str):
+    return str[::-1]
+original_str = "jalla"
+reversed_string = reverse_string(original_str)
+print(reversed_string)
+
+
+language = ['swify','hond', 'bmw']
+for i in language:
+    print(i)
+
+
+language = 'python'
+for i in language:
+    print(i)
+
+for i in range(5):
+    print(i)
+
+while loop
+ 
+number = 1
+
+while number <=3:
+    print(number)
+    number = number + 1
+
+number = int(input('Enter a number: '))
+
+total = 0
+
+while number != 0:
+    total = number + total
+    number = int(input('Enter a number: '))
+print(total)
+
+
+
+Infinite while Loop
+If the condition of a while loop is always True, the loop runs for infinite times, forming an infinite while loop. For example,
+age = 32
+while age > 18:
+    print('you can vote')
+
+
+age = 32    
+# the test condition is always True
+while True:
+    print('You can vote')
+
+
+Break/continue
+
+for i in range(5):
+    if i ==3:
+        break
+    print(i)
+
+for i in range(5):
+    if i == 3:
+        continue
+    print(i)
+
+Testtt
+a = 2
+b = 3
+sum = a + b
+print(sum)
+
+name = "niki!"
+print("Hello, ", name)
+
+pi = 3.14
+print(pi)
+
+Boolean data type
+is_true = True
+is_false = False
+
+#input = int(input('Enter True ot False:'))
+
+print(is_true)
+print(is_false)
+print(type(is_true))
+
+Defines a string variable sentence containing the sentence "Hello, how are you?".
+Asks the user to input a number.
+Converts the user input to an integer.
+Prints the sentence repeated num times using a loop.
+
+my_sentence = 'my strength'
+nums = input('Enter a number:')
+
+try:
+    num = int(nums)
+except ValueError:
+    print("Invalid input! please enter a valid number")
+    exit()
+
+for i in range(num):
+    print(my_sentence)
+
+
+6. Given two variables `x` and `y`, perform the following operations and print the results:
+
+
+a = 6
+b = 2
+
+# addition
+print ('Sum: ', a + b)  
+
+# subtraction
+print ('Subtraction: ', a - b)   
+
+# multiplication
+print ('Multiplication: ', a * b)  
+
+# division
+print ('Division: ', a / b) 
+
+# floor division
+print ('Floor Division: ', a // b)
+
+# modulo
+print ('Modulo: ', a % b)  
+
+# a to the power b
+print ('Power: ', a ** b)  
+#     - Addition of `x` and `y`.
+#     - Subtraction of `y` from `x`.
+#     - Multiplication of `x` and `y`.
+#     - Division of `x` by `y`.
+#     - `x` raised to the power of `y`.
+#     - The remainder when `x` is divided by `y`.
+#     - The floor division of `x` by `y`.
+
+
+7. Define a variable `value` and assign any numerical value to it. Ask the user to input a new value. Update the variable `value` with the new input and print the updated value.
+- **Expected Input:** A numerical value (e.g., "42")
+- **Expected Output:** The updated value of the variable.
+
+my_num = 33
+nums = input('Enter a number:')
+my_num = nums
+print(my_num)
+
+
+## BODMAS
+
+The BODMAS rule stands for:
+
+1. B - Brackets first
+2. O - Orders (exponents and roots, like square roots) next
+3. DM - Division and Multiplication, from left to right
+4. AS - Addition and Subtraction, from left to right
+
+# Example expression: 10 + 5 * (2 ** 3) - 6 / 2
+
+result = 10 + 5 * (2 ** 3) - 6 / 2
+
+# Step 1: Evaluate the expression within the brackets first
+#   2 ** 3 = 8
+#   So, the expression becomes: 10 + 5 * 8 - 6 / 2
+
+# Step 2: Perform Multiplication
+#   5 * 8 = 40
+#   So, the expression becomes: 10 + 40 - 6 / 2
+
+# Step 3: Perform division
+#   6 / 2 = 3
+#   So, the expression becomes: 10 + 40 - 3
+
+# Step 4: Perform addition
+#   10 + 40 = 50
+#   So, the final result is: 50 - 3 = 47
+
+print(result)  # Output: 47.0
+
+
+print(10 / 2 + 3) # Output: 8.0
+print(10 / (2 + 3)) # Output: 2.0
+
+
+#Test
+
+result = 10 + 3 * 2 - 8 / 4
+print(result) //14.0
+
+result1 = 4 ** 2 + 5 / 2 * 3
+print(result1)  //23.5 , 5 / 2 equals 2.5.,2.5 * 3,,7.5 to 16, you get 23.5. So, 7.5 + 16 equals 23.5.
+
+3
+result2 = (8 + 4) * 3 / 2
+print(result2) //18.0
+
+result = 16 / 4 + 2 ** 3 - 6
+print(result)   //6.0
+
+result = 10 - 3 * (4 + 2) / 5
+print(result)
+
+Here's the calculation:
+
+Solve inside the parentheses: 
+
+4+2=6.
+Multiply: 
+3×6=18
+3×6=18.
+Divide: 
+18
+/
+5
+=
+3.6
+18/5=3.6.
+Subtract: 
+10
+−
+3.6
+=
+6.4
+10−3.6=6.4.
+
+
+##String Concatenation
+
+a = "jallapuram" + " " + "Arrow"
+print(a) //jallapuram Arrow
+
+a = "jallapuram" + 10
+print(a) //Error
+
+a = "jallapuram " * 3
+print(a)
+
+
+s = "Arrow"
+s = ("* " *3) + s + (" *" *3)
+print(s)    #//* * * Arrow * * *
+
+###Length of String
+name  = input("Enter the name: ") ##or name = input()
+length = len(name)
+print(length)
+
+###Questions to Solve (Day - 4):
+str1 = "Hello" 
+str2 = "World"
+str3 = str1 + str2
+print(str3)
+
+#2
+name = input("")
+greeting = "Hi "
+
+message = greeting + name
+print(message)
+
+3
+
+a = "PYTHON " * 5
+print(a)
+
+word = "Python"
+repeated_word = word * 5
+
+print(repeated_word)
+
+
+
+4. Ask the user to enter a word and a number. Repeat the word as many times as the given number and print the result.
+    - **Expected Input:** word = "Hello", number = 3
+    - **Expected Output:** "HelloHelloHello"
+word = "Hello"
+num = input("Enter the number: ")
+
+try:
+    num = int(num)
+except ValueError:
+    print("Invalid Response")
+    exit()
+num = word * num
+print(num)
+
+
+6. Ask the user to input a sentence. Find the length of the sentence, and print the last character of the sentence.
+    - **Expected Output:** Length of the sentence and the last character.
+
+
+sentence = "This is a sample sentence."
+length = len(sentence)
+last_character = sentence[-1]
+print("Length of the sentence:",length)
+print("Last character:",last_character)
+
+
+string_pattern = "*"
+for i in range(1,6):
+    #print(i)
+    print(string_pattern * i)
+
+Expected Output:
+*
+**
+***
+****
+*****
+
+####Type Conversion
+Example ki int(), float(), str() etc.
+
+num_int = 123
+print(type(num_int))
+str_int = str(num_int)
+print(type(str_int))
+
+    # <class 'int'>
+    # <class 'str'>
+
+num_float = 3.14
+num_int = int(num_float)
+print(num_int)
+print(type(num_int))
+    #**Output:**
+    # **3
+    # <class 'int'>**
+
+Manam integer and float values in strings ga kuda convert cheyachu, kinda oka sari chuseyyandi.
+123 and 3.14 ni string type loki ela convert chestunnamo.
+num_int = 123
+print(type(num_int)) # Output: <class 'int'>
+num_string = str(num_int)
+print(num_string) # Output: 123
+print(type(num_string)) # Output: <class 'str'>
+
+
+num_float = 3.14
+print(type(num_float)) # Output: <class 'float'>
+num_string = str(num_float)
+print(num_string) # Output: 3.14
+print(type(num_string)) # Output: <class 'str'>
+
+
+
+
+Convert the integer 42 to a string.
+num_int = 42
+print(type(num_int))
+num_str = str(num_int)
+print(num_str)
+print(type(num_str))
+
+Convert the string "123" to an integer.
+num_str = "123"
+print(type(num_str)) # Output: <class 'int'>
+num_int = str(num_str)
+print(num_int) # Output: 123
+print(type(num_int)) # Output: <class 'str'>
+
+
+Convert the float 3.14 to an integer.
+num_float = 3.14
+print(type(num_float))
+num_int = int(num_float)
+print(num_int)
+print(type(num_int))
+
+Question 4:
+Convert the string "5.5" to a floating-point number.
+num_string = "5.5"
+print(type(num_string))
+num_float = float(num_string)
+print(num_float)
+print(type(num_float))
+
+Question 5:
+Convert the integer 100 to a boolean.
+num_int = 100
+print(type(num_int))
+num_boolean = bool(num_int)
+print(num_boolean)
+print(type(num_boolean))
+
+Question 6:
+Convert the boolean True to an integer.
+num_bool = True
+print(type(num_bool))
+num_int = int(num_bool)
+print(num_int)
+print(type(num_int))
+
+##Day 6
+my_string = "Hello world!"
+
+first_character = my_string[0]
+last_character = my_string[-1]
+
+print(first_character)
+print(last_character)
+
+#String Slicing
+Manam string lo oka particular portion ni extract cheyyali ante string slicing vaadtam using :
+
+my_string = "Hello world!"
+
+substring = my_string[0:5]
+substring1 = my_string[1:8]
+#print(substring) //Hello
+print(substring1)   //ello wo
+
+
+my_string = "Coding is fun!"
+#substring = my_string[0]
+#substring = my_string[-1]
+#substring = my_string[3]
+#substring = my_string[-2]
+#substring = my_string[8:15]
+#substring = my_string[-9:-3]
+#substring = my_string[0:6]
+substring = len(my_string)
+print(substring)
+
+
+##### Relational Operators
+
+Veetini manam python lo two values ni compare cheyyadaniki vaadtam.
+
+Ivi motham 6 untay mowa:
+
+- Equal to (==)
+- Not equal to (!=)
+- Greater than (>)
+- Less than (<)
+- Greater than or equal to (>=)
+- Less than or equal to (<=)
+
+
+x = 5
+y = 7
+
+print(x == y)   # False
+print(x != y)   # True
+print(x > y)    # False
+print(x < y)    # True
+print(x >= y)   # False
+print(x <= y)   # True
+
+## Logical Operators
+
+Mukhyanga moodu logical operators untay mowa python lo.
+x and y ni operands ankunte
+
+1. `and`: Returns True if both operands are True.
+2. `or`: Returns True if at least one of the operands is True.
+3. `not`: Returns the opposite boolean value of the operand.
+
+Tip:
+True and True ⇒ True
+True and False ⇒ False
+False and True ⇒ False
+False and False ⇒ False
+
+True or True ⇒ True
+True or False ⇒ True
+False or True ⇒ True
+False or False ⇒ False
+
+Examples chud mowa ippudu!
+
+`and` Operator:
+The `and` operator returns True if both operands are True. Otherwise, it returns False.
+
+Examples chud mowa ippudu!
+and Operator:
+The and operator returns True if both operands are True. Otherwise, it returns False.
+# Example 1: Using 'and' with boolean variables
+a = True
+b = False
+
+result = a and b
+print(result)  # Output: False
+
+# Example 2: Using 'and' with expressions
+x = 10
+y = 5
+
+result = (x > 0) and (y < 10)
+print(result)  # Output: True
+
+result = (x > 0) and (y > 10)
+print(result)  # Output: False
+
+or Operator:
+The or operator returns True if at least one of the operands is True. If both operands are False, it returns False.
+# Example 1: Using 'or' with boolean variables
+a = True
+b = False
+
+result = a or b
+print(result)  # Output: True
+
+# Example 2: Using 'or' with expressions
+x = 10
+y = 5
+
+result = (x > 0) or (y < 10)
+print(result)  # Output: True
+
+result = (x < 0) or (y > 10)
+print(result)  # Output: False
+
+not Operator:
+The not operator returns the opposite boolean value of the operand. If the operand is True, it returns False, and vice versa.
+# Example 1: Using 'not' with boolean variable
+a = True
+
+result = not a
+print(result)  # Output: False
+
+# Example 2: Using 'not' with an expression
+x = 10
+y = 5
+
+result = not (x > y)
+print(result)  # Output: False
+
+result = not (x < y)
+print(result)  # Output: True
+
+​
+Parentheses vaadi more complex logical operations kuda perform cheyyachu okasari look esey kinda.
+# Complex example using all logical operators
+x = 5
+y = 10
+z = 15
+
+result = (x < y) and (y < z) or (x == z)
+print(result)  # Output: True
+
+In this example, (x < y) and (y < z) evaluates to True, and then the whole expression becomes True or (x == z), which is also True. Hence, the final output is True.
+
+x = 10
+y = 5
+
+result = (10 > 5) and ("apple" == "apple")
+print(result)
+
+x = 3
+y = 2
+result = (3 < 2) and ("banana" == "orange")
+print(result)
+
+x = 5
+y = 3
+result = (5>=3) and (10 != 10)
+print(result)  //False
+
+x = 5
+y = 3
+result = ("car"=="car") or (7 < 9)
+print(result)
+
+x = 6
+y = 10
+result = ("dog"=="cat") or (6 < 10)
+print(result)
+
+Example: "not" operator with True condition
+x = 4
+y = 3
+result = not (4 <= 3)
+print(result)
+
+Example: "not" operator with False condition
+x = "orange"
+y = "orange"
+result = not ("orange" == "orange")
+print(result)
+
+Example: "or" operator with both False conditions
+x = 2
+y = 3
+result = (2 == 3) or (8>15)
+print(result)
+
+Example: "not" operator with "and" and "or"
+x = 5
+y = 3
+result = not ((5>3) and ("apple" != "banana"))
+print(result)
+
+Example: Using parentheses for grouping expressions
+x = 5
+y = 3
+z = 10
+result = ((5 >= 3) and (10 != 10)) or (8 > 15) #((5>=3) and (10 != 10)) or (8>5)
+print(result) #//false
+
+Example: Combining multiple "and" operators
+x = 2
+y = 5
+z = 10
+result = ((2 < 5) and (10 == 10)) and ("hello" != "world") #((5>=3) and (10 != 10)) or (8>5)
+print(result) #//true
+
+Example: Using "not" operator with an expression
+x = 10
+y = 5
+result = not ((10>5  and "car" != "car"))
+print(result)
+
+Example: Using "not" operator with "or" and "and"
+x = 5
+y = 3
+result = not ((5>3  or "dog" == "cat" and 7<5))
+print(result)
+
+
+##Conditional 
+
+Conditional Statements
+Manam konni conditions use chesi python program flow ni control chestham mowa.
+Mukhyanga if, elif (short for "else if"), and else. 
+Ee statements manaku condition True or False daani batti pain chesthay!
+Syntax itluntadi conditional statements di
+if condition1:
+    # Code block executed if condition1 is True
+elif condition2:
+    # Code block executed if condition1 is False and condition2 is True
+else:
+    # Code block executed if both condition1 and condition2 are False
+
+
+age = 18
+
+if age >= 18:
+    print(" you can vote!")
+
+
+age = 18
+
+if age >= 25:
+    print(" you can vote!")
+else:
+    print('you are minor')
+
+
+age = 25
+
+if age < 18:
+    print(" you can vote!")
+
+elif(age>=25 and age<65):
+    print("you are an adult")
+
+else:
+    print("you are senior citizen")
+
+
+
+##########Questions to practice (Day 9):
+
+
+def even_odd(num):
+
+    if(num % 2 == 0):
+         print("even number")
+    else:
+         print("you are odd!")
+
+num = int(input("Enter a number:"))
+print(even_odd(num))
+
+def largest_number(num1, num2):
+    if num1 > num2 and num2 > num1:
+        print("num1 is greater") 
+    else :
+        print ("num2 is greater")
+
+num1 = int(input("Enter the first number:"))
+num2 = int(input("Enter the second number:"))
+print(largest_number(num1, num2))
+
+######also
+def print_larger_number(num1, num2):
+    if num1 > num2:
+        print(num1, "is larger")
+    elif num2 > num1:
+        print(num2, "is larger")
+    else:
+        print("Both numbers are equal")
+
+# Taking input from the user
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+print_larger_number(num1, num2)
+
+
+
+
+vowel = ['a', 'e', 'i', 'o', 'u']
+def v_vowel(v):
+    if (v == 'a' or v == 'e'or v == 'i' or v == 'o' or v == 'u'):
+        print("Its a vowel")
+    else:
+        print("Consonant")
+#num = input("Enter a character:")
+print(v_vowel('b'))
+
+
+
+Write a program that takes a year as input and prints "Leap Year" if it's a leap year, and "Not a Leap Year" otherwise.
+
+def is_leap_year(year):
+    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+        print(year, "is a Leap Year")
+    else:
+        print(year, "is Not a Leap Year")
+
+# Taking input from the user
+year = int(input("Enter a year: "))
+
+# Checking if the input year is a leap year or not
+is_leap_year(year)
+
+
+Write a program that takes a grade as input (A, B, C, D, or F) and prints "Pass" if it's A, B, C, or D, and "Fail" if it's F.
+
+def grades(n):
+
+    if (n =='A'):
+        print ("Pass")
+    elif (n =='B'):
+        print ("Pass")
+    elif (n =='c'):
+        print ("Pass")
+    elif (n =='D'):
+        print ("Pass")
+    elif (n =='E'):
+        print ("Pass")
+    else:
+        print ("brake") 
+
+n = input("Enter a grade: ")
+print(grades(n))
+
+
+or
+def check_grade(grade):
+    if grade.upper() in ['A', 'B', 'C', 'D']:
+        print("Pass")
+    elif grade.upper() == 'F':
+        print("Fail")
+    else:
+        print("Invalid Grade")
+
+# Taking input from the user
+grade = input("Enter the grade (A, B, C, D, or F): ")
+
+# Checking if the input grade is a pass or fail
+check_grade(grade)
+
+############# Nested Conditional Statements
+Conditions complex ga unte ivi vaadtam bhayya!
+
+x = 12
+if x > 10:
+    print("x is postive")
+    if(x %2 == 0):
+        print("x is even")
+    else:
+        print("x is odd")
+else:
+    print("x is negative")
+
+Example 2: Nested 'if-elif-else' statements
+
+score = 85
+
+if score >= 90:
+    print("grade A")
+elif(score >= 80):
+    print("Grade B")
+    if(score >= 85):
+        print("good job")
+elif (score>=70):
+    print("Grade C")
+else:
+    print("grade below c")
+
+Note: Nested conditional statements complex situations handle cheesetappudu chaala baaga use avtadi. Mari ekkuvaga deenni vaadakandi, endukante code ni chadavadaaniki, raayadaaniki, maintain cheyyadaniki ibbandi avtundi.
+Check if a given number num is positive, negative, or zero.
+number = 3
+def check_number(num):
+    if num % 2 == 0:
+        print("postive")
+    else:
+        print("-ve")
+number = float(input("Enate a numbner"))
+print(check_number(number))
+
+Check if a given number num is positive, negative, or zero.
+def check_number(num):
+    if num > 0 :
+        return "postove"
+    elif num < 0:
+        return "-ve"
+    else : 
+        return "Zero"
+number = float(input("Enate a numbner"))
+print(check_number(number))
+
+
+######While Loop
+
+Basic syntax of a while loop chuskunte:
+while condition:
+    # Code block to be executed while the condition is True
+
+Example 1:
+# Example: Printing numbers from 1 to 5 using a while loop
+num = 1
+while num <= 5:
+    print(num)
+    num += 1
+
+​
+Output:
+1
+2
+3
+4
+5
+
+num = 1
+while num <=10:
+    print(num)
+    num += 1
+
+
+Create a while loop that calculates the sum of numbers from 1 to n, where n is the input.
+Expected Input: 5
+Expected Output: 15 (1 + 2 + 3 + 4 + 5)
+def calculate_sum(n):
+    
+    total = 0
+    current_num = 1
+
+    while current_num<=n:
+        total += current_num
+        current_num += 1
+    return total
+
+# Test the function
+n = int(input("Enter a number: "))
+print("The sum of numbers from 1 to", n, "is:", calculate_sum(n))
+
+
+
+Write a while loop that prints even numbers from 2 to 10
+num = 2
+while num <=10:
+    if num %2 == 0:
+        print(num)
+    else: #optional
+        print("odd number")        
+    num += 1
+
+
+Create a while loop that keeps prompting the user for a number until they enter a negative number.
+
+numbers = []
+while True:
+    num = float(input("Enter a number"))
+
+    if num < 0:
+        break
+    else:
+        numbers.append(num)
+print("Numbers entered before a negative number:", numbers)
+
+Numbers entered before a negative number: [5.0, 10.0]
+
+
+Question 5:
+Write a while loop that counts down from 10 to 1.
+Expected Output:
+num = 1
+
+while num<=10:
+    print(num)
+    num += 1
+
+Write a while loop that calculates the factorial of a given number.
+
+def factorial(n):
+
+    if n < 0:
+        return "not -ve number"
+    elif n == 0:
+        return 1
+    else :
+        result = 1
+        while n>0:
+            result*= n
+            n-= 1
+        return result
+# Test the function
+num = int(input("Enter a number to calculate its factorial: "))
+print("Factorial of", num, "is:", factorial(num))
+
+def fibonacci(n):
+    # Initialize the first two numbers of the series
+    a, b = 0, 1
+
+    # Print the first two numbers of the Fibonacci series
+    print("Fibonacci Series:")
+    print(a)
+    print(b)
+
+    # Use a while loop to generate the Fibonacci series up to n
+    while a + b <= n:
+        # Calculate the next number in the series
+        c = a + b
+        # Print the next number in the series
+        print(c)
+        # Update the values of a and b for the next iteration
+        a, b = b, c
+
+# Test the function
+num = int(input("Enter a number to generate Fibonacci series up to: "))
+fibonacci(num)
+
+Create a while loop that prints the square of numbers from 1 to 5.
+# Initialize the starting number
+num = 1
+
+# Use a while loop to iterate until num reaches 5
+while num <= 5:
+    # Calculate the square of the current number
+    square = num ** 2
+    # Print the square of the current number
+    print("Square of", num, "is:", square)
+    # Increment num by 1 for the next iteration
+    num += 1
+
+Square of 1 is: 1
+Square of 2 is: 4
+Square of 3 is: 9
+Square of 4 is: 16
+Square of 5 is: 25
+
+
+###for loop
+string_item = "*"
+for i in range(1, 7):
+    print(string_item * i)
+
+*
+**
+***
+****
+*****
+******
+
+for num in range(1, 6):
+    print(num)    //from 1 to 5 (excluding 6)
+1
+2
+3
+4
+5
+
+str = "Hello"
+for i in "Hello":
+    print(i)
+
+Use a for loop to iterate through the range of numbers from 0 to 18 (inclusive)
+with a step of 2 to include only even numbers
+Write a for loop to print the first 10 even numbers.
+
+
+print("First 10 even numbers:")
+for num in range(0, 19, 2):
+    print(num)
+
+
+Create a for loop that doubles each number in the sequence: 1, 2, 3, 4, 5.
+# Define the sequence
+sequence = [1, 2, 3, 4, 5]
+
+# Use a for loop to iterate through each number in the sequence
+# and double each number
+doubled_sequence = []
+for num in sequence:
+    doubled_sequence.append(num * 2)
+
+# Print the doubled sequence
+print("Doubled sequence:", doubled_sequence)
+
+
+######string 
+string1 = "Hello"
+string2 = "World"
+string3 = "!"
+print(string1 * 3)  HelloHelloHello
+
+String Methods
+
+Method Description
+len()
+upper() Returns the uppercase characters of a string.
+lower() Returns the lowercase version of a string.
+swapcase() Like toggle case in word processing, it returns a new string
+with the case of each character in a string switched.
+capitalize() Capitalizes the first letter of string.
+title() Returns a string with the first character of each word
+capitalized and the rest lowercase.
+strip(): Removes leading and trailing whitespaces from the string.
+split() Splits all words into a list.
+join() Joins all words into a string.
+replace(): Replaces occurrences of a substring with another substring.
+split(): Splits the string into a list of substrings based on a delimiter.
+startswith(): Checks if the string starts with a specific prefix.
+endswith(): Checks if the string ends with a specific suffix.
+count(): Returns the number of occurrences of a substring in the string.
+find(): Returns the index of the first occurrence of a substring. If not found, returns -1.
+isdigit(): Checks if all characters in the string are digits.
+isalpha(): Checks if all characters in the string are alphabetic.
+
+string1 = "I love Python programming "
+lower_case = string1.split()
+for word in lower_case:
+    print(word)
+
+I
+love
+Python
+programming
+
+string1 = "banana"
+count = string1.count("a")
+print(count)
+
+string1 = "Hello, World!"
+index = string1.find("l")
+print(index)
+
+string1 = "12345"
+digit = string1.isdigit()
+print(digit)
+
+##Day16
+
