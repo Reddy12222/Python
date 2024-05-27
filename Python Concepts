@@ -3,6 +3,7 @@ map
 reduce
 filter
 time
+enums
 
 list
 tuples
