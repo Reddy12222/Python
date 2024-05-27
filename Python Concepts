@@ -1,3 +1,5 @@
+Lambda, Sorted(), Reduce(), open(), range(), len(), dir(), sum(), any(), isinstance()
+
 lambda
 map
 reduce
@@ -21,37 +23,60 @@ mytripler = myfunc(3)
 
 print(mytripler(11)) //33
 ----------------------------------------------
-map
+MAP FUNCTION:==>
 
+  Is used when you want to execute a function for each item in a iterable.
+  map functions are more efficient then loops when we are working on iterable with a large number of elements
+  
+  def add_list(a,b):
+    return a+b
+  output = list(map(add_list, [2,3,4], [7,5,3]))
+  print(output)
+--------------------------------------------
+ENUMERATE Function:
+
+  This function  helps you to keep track of your iterable elements index.
+ def add_list(a,b):
+    return a+b
+  output = list(map(add_list, [2,3,4], [7,5,3]))
+  print(output) //[9,8,,7]
+---------------------------------------------
+FILTER FUNCTION:
+  Is used to filter any kind of data based on a given condition from a iterable.
+
+def is_positive(a):
+  return a > 0
+output = list(filter(is_postive, [1,-2,3,4,5,6]))
+print(output)
 
 -----------------------------------------------
 List :==>
 
-Lists are used to store multiple items in a single variable.
-Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
-Lists are created using square brackets:
-List items are ordered, changeable, and allow duplicate values.
-
-mylist = ["apple", "banana", "cherry"]
+  Lists are used to store multiple items in a single variable.
+  Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
+  Lists are created using square brackets:
+  List items are ordered, changeable, and allow duplicate values.
+  
+  mylist = ["apple", "banana", "cherry"]
 
 
 --------------------------------------------------
 tuples :==>
 
-Tuples are used to store multiple items in a single variable.
-Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage.
-A tuple is a collection which is ordered and unchangeable.
-Tuples are written with round brackets.
-
-mytuple = ("apple", "banana", "cherry")
+  Tuples are used to store multiple items in a single variable.
+  Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage.
+  A tuple is a collection which is ordered and unchangeable.
+  Tuples are written with round brackets.
+  
+  mytuple = ("apple", "banana", "cherry")
 ---------------------------------------------------------
 Set:==>
 
-Sets are used to store multiple items in a single variable.
-Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Tuple, and Dictionary, all with different qualities and usage.
-A set is a collection which is unordered, unchangeable*, and unindexed.  Duplicates Not Allowed
-
-myset = {"apple", "banana", "cherry"}
+  Sets are used to store multiple items in a single variable.
+  Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Tuple, and Dictionary, all with different qualities and usage.
+  A set is a collection which is unordered, unchangeable*, and unindexed.  Duplicates Not Allowed
+  
+  myset = {"apple", "banana", "cherry"}
 -----------------------------------------------------------------------------------
 Dictionary
 Dictionaries are used to store data values in key:value pairs.
