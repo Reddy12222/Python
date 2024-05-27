@@ -6,6 +6,7 @@ reduce
 filter
 time
 enums
+zip function
 Exceptions
 
 list
@@ -47,7 +48,18 @@ FILTER FUNCTION:
 def is_positive(a):
   return a > 0
 output = list(filter(is_postive, [1,-2,3,4,5,6]))
-print(output)
+print(output)  //[1, 3, 4, 5, 6]
+
+-----------------------------------------
+zip function
+combines elements of two of more iterable into one object.
+you can use the resulting iterator to quickly and consistently solve common indexing problems.
+
+num1 = ["223", "234"]
+num2 = ["jsdh", "tesla"]
+
+num3 = list(zip(num1,num2))
+print(num3) //[('223', 'jsdh'), ('234', 'tesla')]
 
 -----------------------------------------------
 List :==>
