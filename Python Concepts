@@ -21,6 +21,10 @@ mytripler = myfunc(3)
 
 print(mytripler(11)) //33
 ----------------------------------------------
+map
+
+
+-----------------------------------------------
 List :==>
 
 Lists are used to store multiple items in a single variable.
