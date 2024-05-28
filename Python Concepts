@@ -8,6 +8,7 @@ time
 enums
 zip function
 Exceptions
+shallow copy/ deep copy
 
 list
 tuples
